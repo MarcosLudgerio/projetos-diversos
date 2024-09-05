@@ -1,5 +1,4 @@
 html {
-    font-family: sans-serif;
     background: #eee;
     padding: 1rem;
 }
@@ -9,11 +8,13 @@ body {
     margin: 0 auto;
     background: white;
 }
+.cabecalho{
+ border: 1px solid #ddd;
 
-h1 {
-    font-family: serif;
-    color: #377ba8;
-    margin: 1rem 0;
+}
+.cabecalho h1{
+    margin: 0.2em;
+    color: #000;
 }
 
 a {
@@ -34,7 +35,6 @@ nav {
 
 nav h1 {
     flex: auto;
-    margin: 0;
 }
 
 nav h1 a {
