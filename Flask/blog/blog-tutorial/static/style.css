@@ -8,13 +8,21 @@ body {
     margin: 0 auto;
     background: white;
 }
-.cabecalho{
- border: 1px solid #ddd;
+
+.cabecalho {
+    border: 1px solid #ddd;
 
 }
-.cabecalho h1{
+
+.cabecalho a {
+    text-decoration: none;
+}
+
+.cabecalho h1 {
+    font-weight: 600;
     margin: 0.2em;
     color: #000;
+
 }
 
 a {
