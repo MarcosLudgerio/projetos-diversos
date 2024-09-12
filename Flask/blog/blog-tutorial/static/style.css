@@ -105,7 +105,8 @@ nav ul li a, nav ul li span, header .action {
 }
 
 .post .body {
-    white-space: pre-line;
+    text-align: justify;
+    font-size: 0.97em;
 }
 
 .content:last-child {
@@ -119,14 +120,17 @@ nav ul li a, nav ul li span, header .action {
 }
 
 .content label {
-    font-weight: bold;
-    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
 }
 
 .content input, .content textarea {
     margin-bottom: 1em;
 }
-
+.buttons{
+    width: 100%;
+    font-size: 0.98em;
+}
 .content textarea {
     min-height: 12em;
     resize: vertical;
