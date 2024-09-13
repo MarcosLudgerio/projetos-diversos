@@ -21,9 +21,6 @@ def create():
         title = request.form['title']
         body = request.form['body']
         error = None
-        print("estamos por aqui")
-        print(title)
-        print(body)
         if not title:
             error = 'title is required'
         if error is not None:
@@ -34,13 +31,11 @@ def create():
             db.execute('INSERT INTO post (title, body, author_id) VALUES (?, ?, ?)', (title, body, g.user['id']))
             db.commit()
 
-            print("-- salvo com sucesso --")
             return redirect(url_for('blog.index'))
     return render_template('blog/create.html')
 
 
 def get_post(id, check_author=True):
-    print("chamando get_post com id ", id)
     post = (
         get_db()
         .execute(
@@ -51,7 +46,6 @@ def get_post(id, check_author=True):
         )
         .fetchone()
     )
-    print("finalizando a consulta no banco com o post", post["title"])
     if post is None:
         abort(404, f"Post id {id} doesn't exist.")
 
@@ -65,7 +59,6 @@ def get_post(id, check_author=True):
 @login_required
 def update(id):
     post = get_post(id)
-    print("post retornado")
     if request.method == 'POST':
         title = request.form['title']
         body = request.form['body']
