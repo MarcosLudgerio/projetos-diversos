@@ -83,3 +83,22 @@ def delete_post(id_post):
     db.execute('DELETE FROM post WHERE id = ?', (id_post,))
     db.commit()
     return redirect(url_for('blog.index'))
+
+
+@bp.route('/<int:id_post>/view')
+@login_required
+def view_post(id_post):
+    post = get_post(id_post)
+    db = get_db()
+    if request.method == 'POST':
+        title = request.form['title']
+        body = request.form['body']
+        error = None if not title or not body else "Required title and body"
+        if error is not None:
+            flash(error)
+        else:
+            db = get_db()
+            db.execute("SELECT * FROM post WHERE id = ?", (id_post,))
+            db.commit()
+            return redirect(url_for('blog.index'))
+    return render_template("blog/view.html", post=post)

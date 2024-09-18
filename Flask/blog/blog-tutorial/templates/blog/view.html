@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1 class="display-4">{% block title %}View - "{{ post['title'] }}"{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="title">{{ request.form['title'] or post['title'] }}</label>
+    <label for="body">{{ request.form['body'] or post['body'] }}</label>
+    <textarea name="body" id="body"></textarea>
+    <input type="submit" value="Back" class="buttons btn btn-primary">
+  </form>
+{% endblock %}
