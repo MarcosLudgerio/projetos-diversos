@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
+{% block title %}
+    Login
+{% endblock %}
 {% block content %}
-    <form method="POST" novalidate action="">
+    <form method="post" novalidate action="">
         {{ form.hidden_tag }}
         <div class="form-group">
             {{ form.username.label }}
