@@ -3,8 +3,9 @@
     Login
 {% endblock %}
 {% block content %}
-    <form method="post" novalidate action="">
-        {{ form.hidden_tag }}
+    <form method="POST" novalidate action="">
+        {{ form.hidden_tag() }}
+
         <div class="form-group">
             {{ form.username.label }}
             {{ form.username(size=19, class="form-control") }}
@@ -15,10 +16,11 @@
             {% else %}
                 <span></span>
             {% endif %}
+
         </div>
         <div class="form-group">
             {{ form.password.label }}
-            {{ form.password(size=19,  class="form-control") }}
+            {{ form.password(size=19, class="form-control") }}
             {% if form.password.errors %}
                 {% for error in form.password.errors %}
                     <span style="color: red">[{{ error }}]</span>
@@ -26,7 +28,12 @@
             {% else %}
                 <span></span>
             {% endif %}
+        {{ form.remember_me }}
         </div>
         {{ form.submit(class="btn btn-primary") }}
+
+        {% if form.errors %}
+            {{ form.errors }}
+        {% endif %}
     </form>
 {% endblock %}
