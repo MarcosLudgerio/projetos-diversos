@@ -9,3 +9,8 @@ print(pilha.exibeElementos())
 
 print(pilha.desempilha())
 print(pilha.exibeElementos())
+print(pilha.desempilha())
+print(pilha.desempilha())
+print(pilha.exibeElementos())
+print(pilha.topo())
+
