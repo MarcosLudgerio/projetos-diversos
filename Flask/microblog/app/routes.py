@@ -25,19 +25,11 @@ def index():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if current_user.is_authenticated:
-        print('--- VERIFICANDO USER AUTHENTICADO ---')
         return redirect(url_for('index'))
 
     form = LoginForm()
-    print('--- gerando o form login ---')
-    print(form.username.data)
-    print(form.password.data)
-    print(form.validate_on_submit())
-    print('---------------------')
     if form.validate_on_submit():
-        print("---- CONSULTANDO DADOS NO BANCO ----")
         user = User.query.filter_by(username=form.username.data).first()
-        print(f'--- usuario validado {user} ---')
         if user is None or not user.check_password(form.password.data):
             flash('Invalid username or password.')
             return redirect(url_for('login'))
@@ -46,7 +38,6 @@ def login():
         if not next_page or urlparse(next_page).netloc != '':
             next_page = url_for('index')
         return redirect(next_page)
-    print("--- finalizando o processo ---")
     return render_template("login.html", title="Login", form=form)
 
 
