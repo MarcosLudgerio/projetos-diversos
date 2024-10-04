@@ -2,27 +2,32 @@ class Pilha():
     def __init__(self):
         self.listaDeElementos = []
         self.tamanho = len(self.listaDeElementos)
-        self.ultimoElemento = None
+        self.topo = None
 
     def empilha(self, elemento):
-        self.ultimoElemento = elemento
+        self.topo = elemento
         self.listaDeElementos.append(elemento)
         self.tamanho += 1
 
     def estaVazia(self):
-        return self.ultimoElemento is None and self.tamanho == 0
+        return self.topo is None and self.tamanho == 0
 
     def exibeElementos(self):
         return self.listaDeElementos
 
     def desempilha(self):
-        elemento = self.ultimoElemento
-        self.listaDeElementos.remove(self.ultimoElemento)
+        if self.estaVazia():
+            return "A Pilha está vazia"
+        elemento = self.topo
+        self.listaDeElementos.remove(elemento)
         self.tamanho -= 1
-        self.ultimoElemento = self.listaDeElementos[self.tamanho - 1]
+        if self.tamanho == 0:
+            self.topo = None
+            return elemento
+        self.topo = self.listaDeElementos[self.tamanho - 1]
         return elemento
 
     def topo(self):
         if self.estaVazia():
             return
-        return self.ultimoElemento
+        return self.topo
