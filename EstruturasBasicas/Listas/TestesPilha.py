@@ -1,27 +1,7 @@
-from pilha import Pilha
-pilha = Pilha()
+idades = [14, 16, 12, 19, 21]
 
-pilha.empilha(1)
-pilha.empilha(4)
-pilha.empilha(6)
-pilha.empilha(8)
-print(pilha.exibeElementos())
+for i in idades:
+    idades.append(50)
+    print(i, end=', ')
+# 14, 16, 12, 19, 21
 
-print(pilha.desempilha())
-print(pilha.exibeElementos())
-print(pilha.desempilha())
-print(pilha.desempilha())
-print(pilha.exibeElementos())
-print(pilha.topo)
-print(pilha.desempilha())
-print(pilha.exibeElementos())
-pilha.empilha(50)
-print(pilha.desempilha())
-print(pilha.estaVazia())
-pilha.empilha(12)
-print(pilha.desempilha())
-pilha.empilha(25)
-print(pilha.desempilha())
-pilha.empilha(50)
-print(pilha.desempilha())
-print(pilha.exibeElementos())

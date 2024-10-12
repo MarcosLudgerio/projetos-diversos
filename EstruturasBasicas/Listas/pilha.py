@@ -8,6 +8,7 @@ class Pilha():
         self.topo = elemento
         self.listaDeElementos.append(elemento)
         self.tamanho += 1
+        print(f"elemento {elemento} inserido!")
 
     def estaVazia(self):
         return self.topo is None and self.tamanho == 0
