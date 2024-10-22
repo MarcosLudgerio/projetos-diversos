@@ -8,7 +8,6 @@ class Pilha():
         self.topo = elemento
         self.listaDeElementos.append(elemento)
         self.tamanho += 1
-        print(f"elemento {elemento} inserido!")
 
     def estaVazia(self):
         return self.topo is None and self.tamanho == 0
@@ -20,7 +19,7 @@ class Pilha():
         if self.estaVazia():
             return "A Pilha está vazia"
         elemento = self.topo
-        self.listaDeElementos.remove(elemento)
+        self.listaDeElementos.remove(self.listaDeElementos[self.tamanho-1])
         self.tamanho -= 1
         if self.tamanho == 0:
             self.topo = None
@@ -28,7 +27,12 @@ class Pilha():
         self.topo = self.listaDeElementos[self.tamanho - 1]
         return elemento
 
-    def topo(self):
+    def retorna_topo(self):
         if self.estaVazia():
             return
         return self.topo
+
+    def tamanho_da_pilha(self):
+        if self.estaVazia():
+            return 0
+        return self.tamanho
