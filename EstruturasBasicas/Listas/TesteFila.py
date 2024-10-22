@@ -4,9 +4,7 @@ fila = Fila()
 fila.enqueue(2)
 fila.enqueue(5)
 fila.enqueue(8)
-fila.enqueue(20)
-fila.enqueue(20)
-fila.enqueue(20)
+fila.enqueue(9)
 
 fila.exibe_fila()
 
