@@ -1,4 +1,4 @@
-import config.CalculoPrimoThread;
+import examples.CalculoPrimoThread;
 
 public class VerPrimosDuasThreads {
     public static void main(String[] args) {

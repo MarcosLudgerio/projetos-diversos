@@ -1,4 +1,4 @@
-package config;
+package examples;
 
 public class CalculoPrimoThread extends Thread {
 

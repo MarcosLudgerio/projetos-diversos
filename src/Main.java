@@ -1,16 +1,17 @@
-import config.MinhaThread;
+import examples.MinhaThread;
 
 public class Main {
     public static void main(String[] args) {
-       int start = 1;
-       int end = 1000000;
-        for (int i = start; i < end; i++) {
-            if(calculaPrimo(i)) System.out.println(i);
-        }
-    }
-
-    public static boolean calculaPrimo(int numero) {
-        for (int divisor = 2; divisor < numero; divisor++) if (numero % divisor == 0) return false;
-        return true;
+        int[][] matriz1 = {
+                {1, 2, 3},
+                {4, 5, 6}
+        };
+        int[][] matriz2 = {
+                {7, 8},
+                {9, 10},
+                {11, 12}
+        };
+        MinhaThread thread = new MinhaThread(matriz1, matriz2);
+        thread.start();
     }
 }

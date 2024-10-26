@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0392321f-30ea-4d22-a9f7-beb7f295ee04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/VerPrimosDuasThreads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VerPrimosThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/CalculoPrimoThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/MinhaThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/examples/MultiplicaMatriz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VerPrimosDuasThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VerPrimosDuasThreads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VerPrimosThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VerPrimosThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/CalculoPrimoThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/examples/CalculoPrimoThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/MinhaThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/examples/MinhaThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
+    "Application.MultiplicaMatriz.executor": "Run",
     "Application.VerPrimosThread.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -52,7 +55,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.VerPrimosThread">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/corretto-21.0.5" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -69,6 +72,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MultiplicaMatriz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="examples.MultiplicaMatriz" />
+      <module name="StartingThreads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VerPrimosThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="VerPrimosThread" />
       <module name="StartingThreads" />
@@ -77,13 +93,15 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MultiplicaMatriz" />
       <item itemvalue="Application.VerPrimosThread" />
       <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.VerPrimosThread" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MultiplicaMatriz" />
+        <item itemvalue="Application.VerPrimosThread" />
       </list>
     </recent_temporary>
   </component>
@@ -104,7 +122,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729956392811</updated>
       <workItem from="1729956393776" duration="1659000" />
-      <workItem from="1729974114074" duration="2844000" />
+      <workItem from="1729974114074" duration="11343000" />
     </task>
     <servers />
   </component>
@@ -121,5 +139,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/examples/MultiplicaMatriz.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/examples/MultiplicaMatriz.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/examples/MinhaThread.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="tamanho" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
