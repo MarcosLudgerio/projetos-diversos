@@ -1,3 +1,10 @@
+nomesComA = ["André", "Amanda", "Ana", "Alex"]
+
+
+
+
+
+
 # nome = input("Informe seu nome: ")
 
 # para 

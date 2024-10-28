@@ -1,8 +1,11 @@
-class NossaPilha:
+class Pilha:
     def __init__(self):
         self.listaDeElemtos = []
         self.tamanho = 0
         self.topo = None
+
+    def __repr__(self):
+        return str(self.listaDeElemtos)
 
     def empilha(self, elemento):
         self.topo = elemento
@@ -34,6 +37,8 @@ class NossaPilha:
             return 0
         return self.tamanho
 
+    def limparPilha(self):
+       self.listaDeElemtos = []
 
 
 

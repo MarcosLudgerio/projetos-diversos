@@ -1,3 +1,11 @@
+pessoas = ["Ana", "Antonio", "João", "Maria"]
+
+
+
+
+
+
+
 # Entradas: respostas que a pessoa fornecer
 perguntas = [
     "Telefonou para a vítima? ",
@@ -6,6 +14,9 @@ perguntas = [
     "Devia para a vitima? ",
     "Já trabalhou com vítima? "
 ]
+
+
+
 
 # processamento: a pessoa é o quê? vamos contar quantas respostas positivas obtivemos
 

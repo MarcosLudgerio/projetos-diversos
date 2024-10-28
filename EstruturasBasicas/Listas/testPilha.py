@@ -1,25 +1,16 @@
-from PilhaImplementacao import NossaPilha
-
-pilhaTeste = NossaPilha()
-
-
-
-# Criar uma função que verifica se uma cadeia de caractere é um anpalidromo usando pilha
-def e_palidromo(palavra):
-    direta = NossaPilha()
-    for letra in palavra:
-        direta.empilha(letra)
-    for letra in palavra:
-        letraI = direta.desempilha()
-        if letra != letraI:
-            return False
-    return True
+from PilhaImplementacao import Pilha
+formas = Pilha()
+formas.empilha("quadrado")
+formas.desempilha()
+formas.empilha("triangulo")
+formas.empilha("losango")
+formas.desempilha()
+formas.desempilha()
 
 
 
-print(e_palidromo('a mae te ama'))
-print(e_palidromo('radar'))
-print(e_palidromo('mae te ama'))
+
+
 
 
 

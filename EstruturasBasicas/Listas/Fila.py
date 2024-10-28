@@ -3,11 +3,11 @@ class Fila:
         self.lista = []
         self.tamanho = 0
 
-    def enqueue(self, elemento):
+    def enfileirar(self, elemento):
         self.lista.append(elemento)
         self.tamanho += 1
 
-    def dequeue(self):
+    def desenfileirar(self):
         if self.tamanho == 0:
             return
         elemento = self.lista.pop(0)

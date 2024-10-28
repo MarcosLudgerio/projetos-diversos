@@ -1,17 +1,14 @@
 from Fila import Fila
-fila = Fila()
-
-fila.enqueue(2)
-fila.enqueue(5)
-fila.enqueue(8)
-fila.enqueue(9)
-
-fila.exibe_fila()
-
-print(fila.dequeue())
+pacientes = Fila()
+pacientes.enfileirar("Emerson")
+pacientes.enfileirar("Antonio")
+pacientes.enfileirar("Angela")
+pacientes.exibe_fila()
+print(pacientes.desenfileirar())
+pacientes.enfileirar("Gizela")
+pacientes.exibe_fila()
 
 
-fila.exibe_fila()
 
-print(fila.mostrar_calda())
-print(fila.mostrar_cabeca())
+
+
