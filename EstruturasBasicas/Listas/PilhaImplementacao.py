@@ -21,7 +21,7 @@ class Pilha:
         elemento = self.topo
 
         # elemento = self.listaDeElemtos[self.tamanho - 1]
-        del(self.listaDeElemtos[self.tamanho - 1])
+        del (self.listaDeElemtos[self.tamanho - 1])
         self.tamanho -= 1
         if self.tamanho > 0:
             self.topo = self.listaDeElemtos[self.tamanho - 1]
@@ -38,10 +38,4 @@ class Pilha:
         return self.tamanho
 
     def limparPilha(self):
-       self.listaDeElemtos = []
-
-
-
-
-
-
+        self.listaDeElemtos = []
