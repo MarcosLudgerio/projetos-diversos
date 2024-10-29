@@ -18,7 +18,7 @@ def parentesesCheck(cadeiaString):
 
         index = index + 1
 
-    if balanceada and s.esta_vazia():
+    if balanceada and pilhaParentese.esta_vazia():
         return True
     else:
         return False
