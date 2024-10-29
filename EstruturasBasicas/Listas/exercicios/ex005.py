@@ -32,6 +32,7 @@ def pilha_vazia(pilha):
 cabecalho()
 while True:
     opcao = input("Escolha uma opção: ")
+
     if opcao == '1':
         quantidade = int(input("Informe a quantidade que deseja adicionar: "))
         for i in range(quantidade):

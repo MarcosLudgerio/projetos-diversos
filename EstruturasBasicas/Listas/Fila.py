@@ -3,6 +3,9 @@ class Fila:
         self.lista = []
         self.tamanho = 0
 
+    def __repr__(self):
+        return str(self.lista)
+
     def enfileirar(self, elemento):
         self.lista.append(elemento)
         self.tamanho += 1
@@ -29,5 +32,3 @@ class Fila:
 
     def ver_tamanho(self):
         return self.tamanho
-
-
