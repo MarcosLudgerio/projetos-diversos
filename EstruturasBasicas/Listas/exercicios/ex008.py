@@ -1,5 +1,5 @@
 # Problema do parenteses balanceados
-from PilhaImplementacao import Pilha
+from Listas.PilhaImplementacao import Pilha
 
 
 def parentesesCheck(cadeiaString):

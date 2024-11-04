@@ -1,5 +1,5 @@
 # Funções desafazer e refazer de documentos
-from PilhaImplementacao import Pilha
+from Listas.PilhaImplementacao import Pilha
 
 pilhaFaz = Pilha()
 pilhaDesfaz = Pilha()
