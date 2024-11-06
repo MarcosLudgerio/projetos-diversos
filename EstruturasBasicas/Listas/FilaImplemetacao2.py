@@ -15,7 +15,7 @@ class Fila:
         self.__tail = self.__fila[-1]
         self.__head = self.__fila[0]
 
-    def desinfileirar(self):
+    def desenfileirar(self):
         if self.__tamanho == 0:
             return
         item = self.__head
